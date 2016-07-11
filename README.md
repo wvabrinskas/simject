@@ -27,7 +27,8 @@ simject is BSD-licensed. See `LICENSE` for more information.
 	@cp $(THEOS_OBJ_DIR)/*.dylib /opt/simject
 	@cp *.plist /opt/simject
 	@echo Respringing simulator…
-	@/opt/simject/bin/respring_simulator```
+	@/opt/simject/bin/respring_simulator
+	```
 
 1. Open the simulator
 
