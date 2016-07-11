@@ -1,0 +1,5 @@
+#!/bin/bash
+
+make setup
+make -C respring_simulator/
+echo 'Done installing!'

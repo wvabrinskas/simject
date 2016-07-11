@@ -12,19 +12,10 @@ simject_FILES = simject.xm simjectCore.mm
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
-# TODO: This is a rather poor hack-job because respring_simulator ends up being compiled with the simulator target
-# The better (proper) way to do this is to create a separate Makefile using the macosx target...
-
-TOOL_NAME = respring_simulator
-respring_simulator_FILES = respring_simulator.mm simjectCore.mm
-respring_simulator_CFLAGS = -Wno-deprecated-declarations
-
-include $(THEOS_MAKE_PATH)/tool.mk
-
 after-all::
 	@echo Copying binaries...
 	@mkdir -p bin
-	@cp -v $(THEOS_OBJ_DIR)/respring_simulator $(THEOS_OBJ_DIR)/simject.dylib bin
+	@cp -v $(THEOS_OBJ_DIR)/simject.dylib bin
 
 clean::
 	@rm -rfv bin
