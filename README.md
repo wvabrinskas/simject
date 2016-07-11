@@ -20,7 +20,7 @@ simject is BSD-licensed. See `LICENSE` for more information.
 
 1. cd into your tweak project folder
 
-1. Add this to the bottom of your makefile 
+1. Be sure to add this to the bottom of your makefile before running `make`
 
 	```
 	simulator::
