@@ -7,7 +7,7 @@ PACKAGE_VERSION = $(THEOS_PACKAGE_BASE_VERSION)
 include $(THEOS)/makefiles/common.mk
 
 TOOL_NAME = respring_simulator
-respring_simulator_FILES = respring_simulator.mm simjectCore.mm
+respring_simulator_FILES = respring_simulator.mm ../simjectCore.mm
 respring_simulator_CFLAGS = -Wno-deprecated-declarations
 
 include $(THEOS_MAKE_PATH)/tool.mk
