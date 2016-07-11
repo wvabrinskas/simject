@@ -21,13 +21,13 @@ simject is BSD-licensed. See `LICENSE` for more information.
 1. cd into your tweak project folder
 
 1. Add this to the bottom of your makefile 
-`simulator::
+```simulator::
 	@make
 	@echo Copying files to simject directory
 	@cp $(THEOS_OBJ_DIR)/*.dylib /opt/simject
 	@cp *.plist /opt/simject
 	@echo Respringing simulator…
-	@/opt/simject/bin/respring_simulator`
+	@/opt/simject/bin/respring_simulator```
 
 1. Open the simulator
 
